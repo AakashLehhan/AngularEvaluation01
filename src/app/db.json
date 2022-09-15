@@ -1,0 +1,18 @@
+{
+  "PaymentDetails": [
+    {
+      "cardHoldersName": "Suhas Gajula",
+      "cardNumber": "1234567890123489",
+      "expirationDate": "12/99",
+      "securityCode": "123",
+      "id": 1
+    },
+    {
+      "cardHoldersName": "Virat Kohli",
+      "cardNumber": "9876543212345678",
+      "expirationDate": "09/98",
+      "securityCode": "345",
+      "id": 2
+    }
+  ]
+}

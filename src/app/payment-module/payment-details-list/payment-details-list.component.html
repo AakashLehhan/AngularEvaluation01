@@ -1,0 +1,27 @@
+<div class="border-dark rounded">
+  <table class="table table-striped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Card Owner</th>
+        <th>Card Number</th>
+        <th>Exp. Date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let card of cards">
+        <td>{{ card.cardHoldersName }}</td>
+        <td>{{ card.cardNumber }}</td>
+        <td>{{ card.expirationDate }}</td>
+        <td>
+          <i (click)="updateDetails(card.id)" class="fa fa-edit px-3" style="font-size: 20px; color: blue"></i>
+          <i
+            (click)="deleteDetails(card.id)"
+            class="fa fa-trash"
+            style="font-size: 20px; color: red"
+          ></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
